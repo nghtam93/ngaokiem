@@ -1,0 +1,121 @@
+html {
+  height: 100%;
+}
+body {
+  background: #E2E4E7;
+  padding: 0;
+  text-align: center;
+  font-family: 'open sans';
+  position: relative;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  height: 100% !important;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+body, html {
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d;
+}
+
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-pagination {
+  position: absolute;
+  left: 40px;
+  top: 40%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-50%);
+  background: url(../images/bg_pager.png) no-repeat center center;
+  width: 91px;
+  height: 473px;
+  padding-top: 30px;
+}
+.onepage-pagination li {
+  padding: 0;
+  text-align: center;
+  margin: 35px 0;
+}
+.onepage-pagination li a{
+  width: 90px;
+  height: 87px;
+  display: block;
+  background: url(../images/pager01.png) no-repeat center center;
+}
+.onepage-pagination li:nth-child(2) a{
+  background: url(../images/pager02.png) no-repeat center center;
+}
+.onepage-pagination li:nth-child(3) a{
+  background: url(../images/pager03.png) no-repeat center center;
+}
+.onepage-pagination li a:hover,.onepage-pagination li a.active {
+  background: url(../images/pager01_hover.png) no-repeat center center;
+}
+.onepage-pagination li:nth-child(2) a:hover,.onepage-pagination li:nth-child(2) a.active {
+  background: url(../images/pager02_hover.png) no-repeat center center;
+}
+.onepage-pagination li:nth-child(3) a:hover,.onepage-pagination li:nth-child(3) a.active {
+  background: url(../images/pager03_hover.png) no-repeat center center;
+}
+
+
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+  overflow: auto;
+}
+
+.disabled-onepage-scroll .onepage-wrapper .section {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+}
+.disabled-onepage-scroll .onepage-wrapper {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  transform: none !important;
+  -ms-transform: none !important;
+  min-height: 100%;
+}
+
+
+.disabled-onepage-scroll .onepage-pagination {
+  display: none;
+}
+
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+  position: inherit;
+}

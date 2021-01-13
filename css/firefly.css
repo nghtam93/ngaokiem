@@ -1,0 +1,17 @@
+.container,.container2,.container3 {
+  overflow:hidden;
+  position:absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#040429', EndColorStr='#257eb7');
+	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#040429', EndColorStr='#257eb7')";
+}
+
+#pixie,#pixie2,#pixie3 {
+  z-index:10;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
